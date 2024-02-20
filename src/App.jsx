@@ -22,7 +22,7 @@ function App() {
 // هناك مشكلتين الانتر فالسرش مبيجبش اللينك بظبط \\ الناف بار من اول سكرين 385بكسل بتبوظ الشكل
   return (
     <>
-    <Router>
+    <Router basename='/Future AC'>
         <div className='MAIN-WRAPPER' style={{ maxWidth:"1680px", marginInline:"auto"}} >
         <Sidebar />
         <Navbar /> 
