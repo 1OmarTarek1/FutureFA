@@ -1,0 +1,109 @@
+/* .SomeNews-section{
+} */
+.SomeNews-section .SomeNewsContainer{
+    display: flex;
+    gap: var(--padding-primary);
+}
+
+
+
+/* Important News */
+.SomeNews-section 
+.SomeNewsContainer 
+.importantTitles {
+    flex: 1;
+    padding: var(--padding-primary);
+    margin-bottom: 0 ;
+}
+.SomeNews-section 
+.SomeNewsContainer 
+.importantTitles 
+.titlesContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:992px) {
+    .SomeNews-section 
+    .SomeNewsContainer{
+        flex-direction: column;
+    }
+    .SomeNews-section 
+    .SomeNewsContainer 
+    .importantTitles 
+    .titlesContainer{
+        flex-direction: row;
+    }
+}
+/* Important News */
+
+
+
+
+
+
+/* else News */
+.SomeNews-section .SomeNewsContainer .else{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--padding-primary);
+}
+.SomeNews-section .SomeNewsContainer .else .elseItem{
+    flex: 1 ;
+}
+.SomeNews-section .SomeNewsContainer 
+.else .elseItem 
+.embla-thumbs__slide__img{
+    height: 65px;
+}
+.SomeNews-section .SomeNewsContainer 
+.else .elseItem .embla{
+    padding: 0;
+}
+.SomeNews-section 
+.SomeNewsContainer 
+.else-top{
+    background-color: transparent;
+}
+.SomeNews-section 
+.SomeNewsContainer 
+.else-down{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--padding-primary);
+}
+.SomeNews-section 
+.SomeNewsContainer 
+.newCard{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+/* else News */
+
+/*else-down*/
+.SomeNews-section 
+.SomeNewsContainer 
+.else .else-down 
+.playersGoCard {
+    margin-inline: 0 ;
+}
+@media screen and (max-width:600px) {
+    .SomeNews-section 
+    .SomeNewsContainer 
+    .else .else-down{
+        flex: 1 ;
+        flex-direction: column;
+    }
+}
+/*else-down*/
+
+
+
+
+
+
+

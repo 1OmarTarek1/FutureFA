@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+:root{
+
+    /* Colors */
+        --color-primary   : orange;
+        --color-secondary : #000;
+        --color-third     : #fff;
+        --color-darkest   : #1f2122;
+        --color-dark      : #27292a;
+        --color-lightDark : #666;
+        --color-blue      : rgb(91, 91, 185);
+
+    /* Component Colors */
+        --nav-bgColor       : var(--color-darkest);
+        --minNav-bgColor    : var(--color-dark);
+        --body-bgColor      : var(--color-darkest);
+        --Section-bgColor   : var(--color-dark);
+
+    /* Fonts Colors */
+        --mainFonts-color   : var(--color-third);
+        --nav-fontColor     : #f5f2f286;
+        --link-fontColor    : var(--color-blue);
+        --paragraph-color   : var(--color-lightDark);
+        --primaryFont-color : var(--color-primary);
+
+    /* Font weight */
+    --fontWeight-veryLight  : 100 ;
+    --fontWeight-light      : 200 ;
+    --fontWeight-normal     : 300 ;
+    --fontWeight-bold       : 500 ;
+    --fontWeight-veryBold   : 700 ;
+
+
+    --fontFamily-primary    : 'Noto Kufi Arabic', sans-serif;
+
+
+    /* Margin, Padding */
+        --distance-primary : 40px;
+        --margin-primary   : calc(var(--distance-primary)) ;
+        --padding-primary  : calc(var(--distance-primary) - 10px);
+        --sectionMargin    : 60px;
+
+
+    /*Main Transition*/
+    --main-transition : .3s;
+
+
+}
+/* [data-theme='light'] {} */
+
+html{
+    direction: rtl;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+::-webkit-scrollbar             { width           : 5px                     ;}
+::-webkit-scrollbar-track       { background-color: var(--Section-bgColor)  ;}
+::-webkit-scrollbar-thumb       { background-color: var(--color-primary)    ;}
+::-webkit-scrollbar-thumb:hover { background-color: rgb(218, 141, 0)      ;}
+
+::selection { background: rgb(255, 166, 0) ; color: #fff; }
+
+*,*::before,*::after{ 
+    box-sizing: border-box; 
+    /* transition: all .2s;  */
+    /* padding: 0; 
+    margin: 0; */
+}
+
+body{
+    font-family: var(--fontFamily-primary);
+    word-spacing: -1.5px;
+    font-weight: var(--fontWeight-normal);
+    background-color: var(--body-bgColor);
+    color: var(--mainFonts-color);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--link-fontColor);
+    transition: var(--main-transition);
+} a:hover{ filter: brightness(90%) ;}
+p{
+    margin-bottom: 0;
+    color: var(--paragraph-color);
+    font-size: 15px;
+    font-weight: var(--fontWeight-normal);
+}
+
+
+
+.btn{
+    font-weight: 400;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-outline-warning{
+    border: 1px solid;
+    border-radius: 0;
+}
+
+
+
+/* @media screen and (max-width:600px) {
+    p{
+        font-size: 12px !important;
+    }
+} */

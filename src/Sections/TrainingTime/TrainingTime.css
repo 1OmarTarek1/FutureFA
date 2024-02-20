@@ -1,0 +1,7 @@
+/* .TrainingTime-section{
+} */
+.TrainingTime-section .TrainingTimeCards{
+    padding-inline: 20px;
+    padding-bottom: 20px;
+    background-color: var(--body-bgColor);
+}

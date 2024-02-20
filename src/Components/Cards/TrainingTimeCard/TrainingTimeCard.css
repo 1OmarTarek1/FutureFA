@@ -1,0 +1,176 @@
+.TrainingTimeCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+    border-bottom: 1px solid var(--Section-bgColor);
+    transition: var(--main-transition);
+}.TrainingTimeCard:hover{ border-color: var(--color-primary) ;}
+/* .TrainingTimeCard:first-child{
+    padding-top: 0;
+} */
+/* .TrainingTimeCard:last-child{
+    padding-bottom: 0;
+    border: none;
+} */
+
+/*all font size*/
+.TrainingTimeCard .imgTitle .groupNumber,
+.TrainingTimeCard .centerSide .trainingDays{
+    font-size: 15px;
+}
+/*all font size*/
+
+
+/*first*/
+.TrainingTimeCard .firstSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.TrainingTimeCard 
+.firstSide .imgWrapper{
+    width: 125px;
+    height: auto;
+    border: 5px solid var(--Section-bgColor);
+}
+.TrainingTimeCard .imgTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+}
+.TrainingTimeCard .imgTitle
+.groupNumber{
+    font-weight: var(--fontWeight-bold);
+}
+.TrainingTimeCard .imgTitle
+.groupDis{
+    font-size: 13px;
+}
+.TrainingTimeCard .firstSide  
+.imgTitle .groupDis{
+    max-width: 130px;
+    font-size: 12px;
+}
+/*first*/
+
+/*center*/
+.TrainingTimeCard .centerSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+.TrainingTimeCard .centerSide .trainingDays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.TrainingTimeCard .centerSide 
+.trainingDays:last-child svg {
+    color: var(--color-primary);
+}
+/*center*/
+
+
+
+@media screen and (max-width:992px) {
+    /*all fontSize*/
+    .TrainingTimeCard .imgTitle .groupNumber,
+    .TrainingTimeCard .centerSide .trainingDays{
+        font-size: 13px;
+    }
+    /*all fontSize*/
+
+    /*first*/
+    .TrainingTimeCard 
+    .firstSide .imgWrapper{
+        width: 115px;
+    }
+    .TrainingTimeCard .firstSide  
+    .imgTitle .groupDis{
+        max-width: 115px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:767px) {
+    .TrainingTimeCard{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    /*all fontSize*/
+    .TrainingTimeCard .imgTitle .groupNumber,
+    .TrainingTimeCard .centerSide .trainingDays{
+        font-size: 15px;
+    }
+    /*all fontSize*/
+
+    /*firstSide*/
+    .TrainingTimeCard 
+    .firstSide{
+        flex-direction: column;
+    }
+    .TrainingTimeCard 
+    .firstSide .imgWrapper{
+        width: 100%;
+    }
+    .TrainingTimeCard .imgTitle{
+        align-items: center;
+    }
+    .TrainingTimeCard .firstSide  
+    .imgTitle .groupDis{
+        max-width: unset;
+        font-size: 13px;
+    }
+    /*firstSide*/
+    
+    /*centerSide*/
+    .TrainingTimeCard .centerSide {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    /*centerSide*/
+
+    /*lastSide*/
+    .TrainingTimeCard .lastSide {
+        width: 100%;
+    }
+    /*lastSide*/
+
+}
+@media screen and (max-width:467px) {
+    /*all fontSize*/
+    .TrainingTimeCard .imgTitle .groupNumber,
+    .TrainingTimeCard .centerSide .trainingDays{
+        font-size: 13px;
+    }
+    /*all fontSize*/
+    
+    /*firstSide*/
+    .TrainingTimeCard .firstSide  
+    .imgTitle .groupDis{
+        font-size: 11px;
+    }
+    /*firstSide*/
+    
+    /*centerSide*/
+    .TrainingTimeCard .centerSide {
+        justify-content: space-between;
+    }
+    /*centerSide*/
+}
+
+@media screen and (max-width:400px) {
+    /*centerSide*/
+    .TrainingTimeCard .centerSide {
+        flex-direction: column;
+    }
+    /*centerSide*/
+}

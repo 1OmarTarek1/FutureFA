@@ -1,0 +1,171 @@
+/*navbar*/
+.MAIN-WRAPPER:has(.Home-Page) .headroom--unfixed{
+    padding: 10px;
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.headroom--pinned { 
+    padding: 10px; 
+}
+
+.MAIN-WRAPPER:has(.Home-Page)
+.headroom--pinned:hover .nav-container{ 
+    background-color: #22222263 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+
+.MAIN-WRAPPER:has(.Home-Page) .nav-navbar{
+    position: absolute;
+}
+.MAIN-WRAPPER:has(.Home-Page) .nav-container{
+    border-inline: 1px solid rgba(255, 166, 0, 0.541);
+    background-color: #2222221c;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000075;
+}
+/*navbar*/
+
+
+
+/*navbar links*/
+.MAIN-WRAPPER:has(.Home-Page) 
+.nav-container .navLink{
+    color: #f5f2f296;
+    /* font-weight: 400; */
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.nav-container .navLink:hover{
+    color: var(--color-primary);
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.nav-container .navLink.active{
+    color: var(--color-primary);
+    filter: drop-shadow( 0 0 5px);
+}
+/*navbar links*/
+
+
+
+
+
+
+
+
+/*search*/
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .SearchLabel{
+    color: #f5f2f296;
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper:hover .SearchLabel{
+    color: var(--color-primary);
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .activeSearch{
+    background-color: transparent;
+    color: #f5f2f296;
+    caret-color: #f5f2f296;
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper:has(.activeSearch) .SearchLabel{
+    color: var(--color-primary);
+}
+
+
+
+
+
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .Search{
+    border: 1px solid #f5f2f296;
+    background-color: transparent;
+    color: transparent;
+    caret-color: transparent;
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper:hover .Search{
+    border-color: var(--color-primary);
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .Search::placeholder{
+    background-color: transparent;
+    color: transparent;
+}
+
+
+
+
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .activeSearch{
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    caret-color: var(--color-primary);
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.SearchWrapper .activeSearch::placeholder{
+    background-color: transparent;
+    color: #f5f2f296;
+}
+
+/*search*/
+
+
+
+
+/*navbar sidebar*/
+.MAIN-WRAPPER:has(.Home-Page) 
+.Sidebar .SidebarBtn{
+    top: 80px;
+}
+.MAIN-WRAPPER:has(.Home-Page) 
+.Sidebar:has(.checkSide:checked) 
+.SidebarBtn{
+    top: 17px;
+    right: calc( 100% - 40px - 10px );
+    opacity: 1;
+    z-index: 1;
+}
+/*navbar sidebar*/
+
+
+@media screen and (max-width:767px) {
+    .MAIN-WRAPPER:has(.Home-Page) 
+.nav-container .navLink{
+    color: var(--nav-fontColor);
+}
+
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper .SearchLabel{
+        color: var(--nav-fontColor);
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper:has(.activeSearch) .SearchLabel{
+        color: var(--color-primary);
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper .Search{
+        border-inline: 0;
+        border-color: var(--color-darkest);
+        background-color: var(--color-darkest);
+        color: var(--color-primary);
+        caret-color: unset;
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper .Search::placeholder{
+        color: var(--color-lightDark);
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper .activeSearch{
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+        background-color: transparent;
+        caret-color: #f5f2f296;
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .SearchWrapper .activeSearch::placeholder{
+        background-color: transparent;
+        color: #f5f2f296;
+    }
+}

@@ -1,0 +1,26 @@
+.News-Page .sandbox {
+    max-width: 100%;
+    margin-bottom: var(--margin-primary);
+}
+.News-Page .embla {
+    padding: 0;
+}
+.News-Page .embla-thumbs__slide__img {
+    height: 100px;
+}
+.News-Page .embla__slide__img{
+    height: 540px;
+}
+
+@media screen and (max-width:767px) {
+    .News-Page .sandbox {
+        max-width: 67rem;
+        margin-bottom: 15px;
+    }
+    .News-Page .embla-thumbs__slide__img {
+        height: 60px;
+    }
+    .News-Page .embla__slide__img{
+        height: auto;
+    }
+}

@@ -1,0 +1,36 @@
+.nav-container .linksBtn{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.nav-container .linksBtn .BtnLine{
+    width: 19px;
+    height: 1px;
+    background-color: var(--primaryFont-color);
+    transition: var(--main-transition);
+}
+.nav-container .BtnAnimation .BtnLine{
+    position: absolute;
+}
+.nav-container .BtnAnimation .BtnLine:nth-child(1){
+    transform: rotate(-45deg);
+}
+.nav-container .BtnAnimation .BtnLine:nth-child(2){
+    display: none;
+}
+.nav-container .BtnAnimation .BtnLine:nth-child(3){
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width:767px) {
+    .nav-container .linksBtn{
+        display: flex;
+    }
+}

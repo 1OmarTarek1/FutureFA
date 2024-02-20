@@ -1,0 +1,127 @@
+
+.HomeHeader .colorEffect{
+    display: grid;
+    place-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient( 0deg, var(--body-bgColor), transparent, transparent );
+    cursor: default;
+}
+
+.HomeHeader .colorEffect .HeaderContent{
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+}
+.HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+    font-size: 4rem;
+    line-height: 0.70em;
+    font-weight: var(--fontWeight-bold);
+    letter-spacing: .1rem;
+    -webkit-box-reflect: below 1px linear-gradient( transparent, #0004) ;
+    animation: animate 3s linear infinite alternate;
+}
+@keyframes animate {
+    from{
+        color: #ffffffa1;
+        filter: drop-shadow(none);
+    }
+    to {
+        color: #fff;
+        filter: drop-shadow(0 0 5px #ffffffc5) ;
+    }
+}
+
+.HomeHeader .colorEffect .HeaderIcn{
+    flex: 1;
+}
+.HomeHeader .colorEffect .HeaderIcn img{
+    transition: .7s;
+    animation: 1s ease-in-out 0s infinite alternate logoFly;
+}
+@keyframes logoFly {
+    from {
+        /* pushes the sun down past the viewport */
+        transform: translateY(20px);
+    }
+    to {
+        /* returns the sun to its default position */
+        transform: translateY(0);
+    }
+}
+.HomeHeader .colorEffect .HeaderIcn img:hover{
+    opacity: 0;
+}
+
+.HomeHeader .colorEffect .HeaderContent p{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .HomeHeader .colorEffect .HeaderIcn img{
+        width: 200px;
+    }
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle{
+        margin-bottom: 30px !important;
+    }
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+        font-size: 2.7rem;
+        margin-top: 0 !important;
+    }
+}
+@media screen and (max-width:767px) {
+    .HomeHeader .colorEffect .HeaderIcn {
+        display: none;
+    }
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle{
+        margin-bottom: 30px !important;
+    }
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+        font-size: 3rem;
+    }
+
+}
+@media screen and (max-width:576px) {
+
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:476px) {
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle{
+        margin-bottom: 20px !important;
+    }
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+        font-size: 2rem;
+    }
+    .HomeHeader .colorEffect .HeaderContent p{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .HomeHeader .colorEffect .HeaderContent .btn{
+        display: grid;
+        place-content: center;
+        width: 70px;
+        height: 27px;
+        padding: 0;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:392px) {
+    .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
+        font-size: 1.7rem;
+    }
+    .HomeHeader .colorEffect .HeaderContent p{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+

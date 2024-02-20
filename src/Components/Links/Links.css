@@ -1,0 +1,121 @@
+.nav-container .navLinks{
+    position: relative;
+    left: -12px;
+    display: flex;
+    gap: 25px;
+}
+.nav-container .navLi{
+    position: relative;
+}
+.nav-container .navLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-weight: 500;
+    color: var(--nav-fontColor);
+    transition: all var(--main-transition);
+}
+.nav-container .navLink:hover{
+    color: var(--color-primary);
+}
+.nav-container .navLink.active{
+    color: var(--color-primary);
+    filter: drop-shadow( 0 0 5px);
+}
+.nav-container .navLink span{
+    font-size: 11px;
+}
+
+/*drop down*/
+.nav-container
+.dropdownLinks:hover .secondLinks{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*Search*/
+.navLinks > .navLi:last-child{
+    border-bottom: none ;
+    padding: 0;
+}
+.navLinks .navLiSearch{
+    display: none;
+    width: 100%;
+}
+.navLinks .navLi .SearchWrapper .SearchLabel{
+    width: fit-content;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-45%);
+}
+.navLinks .navLi .SearchWrapper .Search{
+    width: 100%;
+    height: 45px;
+    right: 0;
+    border-radius: 0;
+    padding-inline: 37px 20px;
+    border-inline: none;
+    background-color: #222;
+}
+.navLinks .navLi .SearchWrapper .Search:focus{
+    border-inline: none;
+    background-color: var(--body-bgColor);
+}
+.navLinks .navLi .SearchWrapper .Search::placeholder{
+    color: var(--nav-fontColor);
+}
+
+@media screen and (max-width:992px) {
+    .nav-container .navLinks{
+        left: -30px;
+    }
+}
+@media screen and (max-width:767px) {
+    .navLinks .navLi .SearchWrapper{
+        display: block;
+        width: 100%;
+    }
+    .nav-container .navLinks{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate( -50%, 0%);
+        width: 87%;
+        background-color: var(--minNav-bgColor);
+        border-inline: 1px solid var(--color-primary);
+        opacity: 0;
+        z-index: -1;
+        transition: all .4s;
+        box-shadow: 0px 0px 10px 0px #00000025;
+        
+    }
+    .nav-container .navLink{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 5px;
+        width: 70px;
+    }
+    .nav-container .openNavbar{
+        top: 100%;
+        transform: translate( -50%, 0 );
+        opacity: 1;
+    }
+    .nav-container .navLinks li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 12px 15px;
+        border-bottom: 1px solid var(--body-bgColor);
+        transition: var(--main-transition);
+    }
+    .nav-container .openNavbar li:hover{
+        border-bottom-color: var(--color-primary) !important;
+    }
+}

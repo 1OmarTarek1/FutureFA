@@ -1,0 +1,99 @@
+/*header*/
+.ContactUs-Section .contactHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContactUs-Section  .contactHeader .SectionHeader{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ContactUs-Section  .contactHeader p{
+    max-width: 65%;
+    text-align: center;
+}
+/*header*/
+
+
+
+/*contact form*/
+.ContactUs-Section .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* align-items: center; */
+}
+.ContactUs-Section .contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 3;
+}
+/*------------------------------------*/
+.ContactUs-Section .main-input{
+    height: 60px;
+    padding: 15px;
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--mainFonts-color);
+    border: 1px solid var(--color-lightDark);
+    caret-color: var(--color-lightDark);
+}
+.ContactUs-Section .main-input:focus{
+    outline: unset;
+}
+/*------------------------------------*/
+
+
+.ContactUs-Section .info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.ContactUs-Section .info-bx{
+    margin-inline: auto;
+    width: 145px;
+}
+
+/*contact form*/
+
+@media screen and (max-width:767px) {
+    .ContactUs-Section .content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+    .ContactUs-Section  .contactHeader p{
+        max-width: 90%;
+    }
+    .ContactUs-Section .info{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .ContactUs-Section .info-bx{
+        margin-inline: unset;
+        width: fit-content;
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .ContactUs-Section  .contactHeader p{
+        max-width: 100%;
+    }
+    .ContactUs-Section .info{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .ContactUs-Section .info-bx{
+        margin-inline: unset;
+        width: fit-content;
+    }
+}

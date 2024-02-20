@@ -1,0 +1,32 @@
+.MainContainer{
+    position: relative;
+    margin-inline: auto;
+    padding: var(--margin-primary);
+    padding-top: 0;
+    background-color: var(--body-bgColor);
+    max-width: 1680px;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .MainContainer{
+        padding: 20px;
+        padding-top: 0;
+    }
+}
+    @media screen and (max-width:567px) {
+    .MainContainer{
+        padding: 10px;
+        padding-top: 0;
+    }
+}
+
+
+/* @media screen and (max-width:500px) {
+    .MainContainer{
+        margin: calc(var(--margin-primary) - 25px);
+    }
+} */
+/* background-color: var(--container-bgColor); */
+

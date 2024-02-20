@@ -1,0 +1,88 @@
+.TeamWork-section {
+    position: relative;
+    margin-bottom: var(--margin-primary);
+}
+.TeamWork-section .TeamWork-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(85%);
+    transition: var(--main-transition);
+    overflow: hidden;
+}
+
+/*title*/
+.TeamWork-section .coachesHeadTitle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+    transition: var(--main-transition);
+    transition: visibility .1s , opacity .2s;
+}
+.TeamWork-section .coachesHeadTitle span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 29px;
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.5rem;
+    color: var(--mainFont-color);
+    line-height: 0.70em;
+    -webkit-box-reflect: below 1px linear-gradient( transparent, #0004) ;
+    animation: animateCoaches 3s linear infinite alternate;
+    transition: var(--main-transition);
+
+}
+.TeamWork-section:hover .coachesHeadTitle {
+    opacity: 0;
+    visibility: hidden ;
+}
+.TeamWork-section:hover .coachesHeadTitle span{
+    letter-spacing: 2rem;
+}
+@keyframes animateCoaches {
+from{
+    color: #ffffffcb;
+    filter: drop-shadow(none);
+}
+to {
+    color: #fff;
+    filter: drop-shadow(0 0 5px #ffffffc5) ;
+}
+}
+/*title*/
+
+@media screen and (max-width:992px) {
+    .TeamWork-section .coachesHeadTitle span{
+        font-size: 3rem;
+        letter-spacing: 1.8rem;
+    }
+    .TeamWork-section:hover .coachesHeadTitle span{
+        letter-spacing: 1.6rem;
+    }
+}
+@media screen and (max-width:992px) {
+    .TeamWork-section .coachesHeadTitle span{
+        font-size: 3rem;
+        letter-spacing: 1.8rem;
+    }
+    .TeamWork-section:hover .coachesHeadTitle span{
+        letter-spacing: 1.6rem;
+    }
+}
+@media screen and (max-width:567px) {
+    .TeamWork-section .coachesHeadTitle span{
+        font-size: 2rem;
+        letter-spacing: 1.5rem;
+    }
+    .TeamWork-section:hover .coachesHeadTitle span{
+        letter-spacing: 1.3rem;
+    }
+}

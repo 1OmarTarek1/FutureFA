@@ -1,0 +1,73 @@
+.footSecCent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerCont{
+    flex: 1 100% !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    width: 100% !important;
+}
+.footFont p{ 
+    font-weight: 400;
+}
+.footSecTop,
+.footSecBott{
+    font-weight: var(--fontWeight-bold);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.footSecTop{
+    border-top: 2px solid var(--Section-bgColor);
+}
+.pcFooter{
+    margin: 0 !important;
+    padding-block: var(--padding-primary);
+}
+.mobileFooter{
+    display: none;
+}
+
+.footSecTop div a{
+    margin-inline: 10px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .pcFooter{
+        display: none;
+    }
+    .mobileFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: var(--padding-primary);
+    }
+    .footerCont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto !important;
+    }
+    .mobileFooter .accordion-button{
+        padding: 10px;
+        /* width: 150px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    .mobileFooter .accordion-button::after{
+        margin-left: 10px !important;
+    }
+    .mobileFooter .accordion-button:not(.collapsed){
+        background-color: transparent !important;
+        color: unset !important;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: var(--mdb-accordion-btn-icon) !important;
+    }
+}

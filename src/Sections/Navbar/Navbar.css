@@ -1,0 +1,55 @@
+.headroom--unfixed{
+    transition: var(--main-transition);
+}
+
+
+
+
+.nav-navbar{
+    position: relative;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1680px;
+    height: 70px;
+    background-color: var(--nav-bgColor);
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 7px 20px;
+    /* background-color: var(--nav-bgColor); */
+    border-inline: 1px solid var(--color-primary);
+    transition: var(--main-transition);
+    box-shadow: 0px 0px 5px 0px #00000075;
+}
+.headroom--unfixed .nav-navbar{
+    background-color: var(--nav-bgColor);
+}
+.headroom--pinned .nav-container {  
+    background-color: #22222269;
+    backdrop-filter: blur(15px);
+} 
+.headroom--pinned:hover .nav-container{ 
+    background-color: #2222229a !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .nav-container .logoWrapper .logoImg{
+        animation: .9s ease-in-out 0s infinite alternate logoFlyHeader;
+    }
+    @keyframes logoFlyHeader {
+        from {
+            transform: translateY(5px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+}
+

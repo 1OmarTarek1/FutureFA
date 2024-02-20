@@ -1,0 +1,118 @@
+.TeamWorkCard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    transition: var(--main-transition);
+    cursor: default;
+}
+
+
+/*details*/
+.TeamWorkCard .details{
+    position: absolute;
+    width: 95%;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #00000080;
+    backdrop-filter: blur(3px);
+    border: 1px solid #ffffff36;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.2s, opacity 0.2s linear, display 1s linear;
+    transition: var(--main-transition);
+}
+.TeamWorkCard .details .coachName{
+    font-size: 20px;
+    color: var(--mainFonts-color);
+}
+.TeamWorkCard .details .coachTitle{
+    font-size: 15px;
+    color: var(--mainFonts-color);
+}
+.TeamWorkCard .details .coachAbout p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--color-primary);
+}
+
+
+/*Image*/
+.TeamWorkCard .CoachImg{
+    height: 450px;
+    transition: var(--main-transition);
+}
+
+/*start hover*/
+.TeamWorkCard:hover{
+    flex: 4;
+}
+.TeamWork-cards:hover .TeamWorkCard:not(:hover){
+    filter: blur(3px) brightness(70%);
+}
+.TeamWorkCard:hover .CoachImg{
+    filter: blur(2px);
+}
+.TeamWorkCard:hover .CoachImg:hover{
+    filter: blur(0px);
+}
+.TeamWorkCard:hover .details{
+    visibility: visible;
+    opacity: 1;
+    backdrop-filter: blur(3px);
+    transition-delay: 1s;
+}
+.TeamWorkCard:hover .details:hover{
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .TeamWorkCard .CoachImg{
+        height: 250px;
+        transition: var(--main-transition);
+    }
+    .TeamWorkCard:hover{
+        flex: 4;
+    }
+    .TeamWorkCard .details{
+        width: 95%;
+        padding: 10px;
+    }
+    .TeamWorkCard .details .coachName{
+        font-size: 17px;
+    }
+    .TeamWorkCard .details .coachTitle{
+        font-size: 13px;
+    }
+    .TeamWorkCard .details .coachAbout p{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:567px) {
+    .TeamWorkCard .btn-outline-warning{
+        padding: 4px;
+        font-size: 10px;
+    }
+    .TeamWorkCard:hover{
+        flex: 7;
+    }
+}
+@media screen and (max-width:445px) {
+
+    .TeamWorkCard:hover{
+        flex: 10;
+    }
+}
+
+

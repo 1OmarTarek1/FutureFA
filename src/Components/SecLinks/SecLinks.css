@@ -1,0 +1,33 @@
+.secondLinks{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.2s, opacity 0.2s linear;
+    /* border: 1px solid var(--container-bgColor); */
+    background-color: var(--minNav-bgColor);
+    z-index: 3000;
+}
+
+.secondLinks .navLink{
+    flex-direction: row;
+    width: 100px;
+    height: 35px;
+    justify-content: center;
+}
+.secondLinks  .Teams:hover .ThirdLinks{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width:767px) {
+    .secondLinks{
+        z-index: 1;
+    }
+    .secondLinks .navLink{
+        height: unset;
+        justify-content: center;
+    }
+}

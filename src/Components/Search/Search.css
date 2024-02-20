@@ -1,0 +1,115 @@
+.SearchWrapper{
+    position: relative;
+    transition: all var(--main-transition);
+}
+.SearchWrapper .SearchLabel{
+    position: relative;
+    top: 6.5px;
+    right: -9px;
+    z-index: 1;
+    color: var(--color-lightDark);
+    cursor: pointer;
+    transition: all var(--main-transition);
+}
+
+.SearchWrapper .Search{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+    border: none;
+    /* border: 1px solid var(--color-lightDark); */
+    border-radius: 50px;
+    caret-color: var(--Section-bgColor);
+    color: var(--nav-fontColor);
+    background-color: var(--Section-bgColor);
+    cursor: pointer;
+    transition: all var(--main-transition);
+}
+.SearchWrapper .Search::placeholder{
+    color: var(--Section-bgColor);
+}
+
+
+/*hover*/
+.SearchWrapper:hover .Search{
+    border: 1px solid var(--color-primary);
+}
+.SearchWrapper:hover .SearchLabel{
+    color: var(--color-primary);
+}
+
+/*Focus*/
+.SearchWrapper .Search:focus{
+    outline: none;
+}
+
+
+
+/*active*/
+.SearchWrapper .activeSearch{
+    width: 200px;
+    height: 35px;
+    padding: 0px 35px 0px 15px;   
+    border: 1px solid var(--color-primary); 
+    box-shadow: 0px 0px 5px 0px var(--color-primary);
+    color: var(--color-primary);
+    caret-color: var(--color-lightDark);
+    cursor: auto;
+    transition: all var(--main-transition);
+}
+.SearchWrapper:has(.activeSearch) .SearchLabel{
+    right: -170px;
+    color: var(--color-primary);
+    transition: all var(--main-transition);
+}
+.SearchWrapper .activeSearch::placeholder{
+    color: var(--color-lightDark);
+    transition: all var(--main-transition);
+}
+
+
+
+@media screen and (max-width:992px) {
+    .SearchWrapper .Search{
+        position: relative;
+    }
+    .SearchWrapper .SearchLabel{
+        position: relative;
+        top: 3px;
+        right: 26px;
+    }
+    .SearchWrapper:has(.activeSearch) .SearchLabel{
+        right: 30px;
+    }
+}
+@media screen and (max-width:767px) {
+    .SearchWrapper .Search{
+        transform: translateY(0);
+    }
+    .SearchWrapper{
+        display: none;
+    }
+    /*Focus*/
+    .SearchWrapper:focus-within .SearchLabel{
+        left: -15px;
+        color: var(--color-primary);
+    }
+    .SearchWrapper .Search:focus{
+        caret-color: var(--nav-fontColor);
+        border: 1px solid var(--color-primary); 
+        box-shadow: 0px 0px 5px 0px;
+        background-color: var(--Section-bgColor);
+        color: var(--color-primary);
+        cursor: auto;
+    }
+    .SearchWrapper .Search::placeholder{
+        color: var(--Section-bgColor);
+    }
+    .SearchWrapper .Search:focus::placeholder{
+        color: var(--nav-fontColor);
+    }
+}

@@ -1,0 +1,14 @@
+.ThirdLinks{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+    background-color: var(--minNav-bgColor);
+}
+
+@media screen and (max-width:767px) {
+    .ThirdLinks{
+        z-index: 1;
+    }
+}

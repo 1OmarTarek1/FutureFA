@@ -1,0 +1,13 @@
+.Map-Section .mapImgWrapper{
+    overflow: hidden;
+}
+.Map-Section .mapIMg{
+    filter: brightness(95%);
+    transition: var(--main-transition);
+}
+.Map-Section .mapIMg:hover{
+    transform: scale(1.1)
+}
+.Map-Section .mapIMg:active{
+    transform: scale(2)
+}

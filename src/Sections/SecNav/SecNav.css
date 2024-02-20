@@ -1,0 +1,60 @@
+.SecNav .linksContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 45px;
+    width: 100%;
+    overflow-x: scroll;
+}
+.SecNav .linksContainer::-webkit-scrollbar{
+    height: 2px;
+}
+
+.SecNav .secNavLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 90px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: var(--Section-bgColor);
+    color: var(--color-lightDark);
+}
+.SecNav .secNavLink:hover {
+    color: var(--color-primary);
+}
+
+
+
+@media screen and (max-width:992px) { /* All Pages */
+    .SecNav .linksContainer{
+        gap: 15px;
+        height: 45px;
+    }
+    .SecNav .linksContainer::-webkit-scrollbar{
+        height: 0px;
+    }
+    .SecNav .secNavLink {
+        height: 25px;
+        width: 80px;
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:690px) { /* About Page */
+    .About-page .SecNav .linksContainer{ /* About Page*/
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:595px) { /* ( News & Team ) - Pages */
+    .Team-Page .SecNav .linksContainer,
+    .News-Page .SecNav .linksContainer{ /* ( News & Team ) - Pages*/
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:480px) { /* All Pages */
+    .SecNav .linksContainer{ /* All Pages*/
+        justify-content: flex-start;
+    }
+}

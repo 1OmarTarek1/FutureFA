@@ -1,0 +1,13 @@
+.SectionWrapper{
+    position: relative;
+    padding: calc(var(--padding-primary) + 5px) ;
+    margin-bottom: calc( var(--sectionMargin) );
+    background-color: var(--Section-bgColor);
+}
+
+
+@media screen and (max-width: 567px) {
+    .SectionWrapper{
+        padding: calc(var(--padding-primary) - 10px) ;
+    }
+}

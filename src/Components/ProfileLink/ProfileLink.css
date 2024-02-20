@@ -1,0 +1,13 @@
+.profile .profileImg img{
+    border: 1px solid var(--nav-fontColor);
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+.profile .profileImg img:hover{
+    border-color: var(--color-primary);
+    
+}
+.profile .active .profileImg img{
+    border-color: var(--color-primary);
+
+}

@@ -1,0 +1,9 @@
+.SubscribePlan-Section .slick-list {
+    padding-block: 25px;
+}
+.SubscribePlan-Section .slick-slide {
+    padding-inline: 15px;
+}
+.SubscribePlan-Section .SubscribePlanCards {
+    transition: var(--main-transition);
+}

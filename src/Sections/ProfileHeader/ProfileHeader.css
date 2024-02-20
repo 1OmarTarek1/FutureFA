@@ -1,0 +1,111 @@
+.ProfileHeader-Section {
+    border-bottom: 2px solid var(--Section-bgColor);
+    margin-bottom: var(--margin-primary);
+}
+/*cover*/
+.ProfileHeader-Section .coverWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    /* border: 5px solid var(--Section-bgColor); */
+}
+/*cover*/
+
+
+/*profile image */
+.ProfileHeader-Section .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+.ProfileHeader-Section .profileItems{
+    padding-block: 5px 20px;
+    display: flex;
+    gap: 10px;
+}
+.ProfileHeader-Section .info .profileImg{
+    position: absolute;
+    transform: translateY(-50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid var(--body-bgColor);
+}
+.ProfileHeader-Section .info .profText{
+    padding-right: 165px;
+    display: flex;
+    flex-direction: column;
+}
+.ProfileHeader-Section .info .profileName{
+    font-size: 27px;
+    font-weight: 400;
+}
+.ProfileHeader-Section .info .profileDes{
+    font-size: 14px;
+    color: var(--color-lightDark);
+}
+
+/* .ProfileHeader-Section .info .userMedia{
+} */
+/*profile image */
+
+
+@media screen and (max-width:850px) {
+    .ProfileHeader-Section .coverWrapper{
+        height: 400px;
+    }
+}
+@media screen and (max-width:767px) {
+    .ProfileHeader-Section .coverWrapper{
+        height: 350px;
+    }
+    .ProfileHeader-Section .info{
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+    }
+    .ProfileHeader-Section .profileItems{
+        padding-block: 5px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .ProfileHeader-Section .info .profileImg{
+        transform: translateY(-50%);
+        width: 160px;
+        height: 160px;
+    }
+    .ProfileHeader-Section .info .profText{
+        text-align: center;
+        margin-top: 80px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .ProfileHeader-Section .userMedia{
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:567px) {
+    .ProfileHeader-Section .coverWrapper{
+        height: auto;
+    }
+    .ProfileHeader-Section .info .profileImg {
+    width: 140px;
+    height: 140px;
+    }
+}
+@media screen and (max-width:425px) {
+
+    .ProfileHeader-Section .info .profileImg {
+    transform: translateY(-60%);
+    width: 120px;
+    height: 120px;
+    }
+}

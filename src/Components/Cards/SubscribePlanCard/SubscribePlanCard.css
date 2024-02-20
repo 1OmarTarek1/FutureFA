@@ -1,0 +1,104 @@
+.SubscribePlanCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-size: 12px;
+    background-color: var(--body-bgColor);
+    border: 1px solid #444444a9;
+    transition: var(--main-transition);
+    direction: rtl;
+    filter: blur(0px);
+    transform: translateY(0px) scale(1);
+    cursor: pointer;
+}
+
+.SubscribePlanCard .subHeader{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: var(--Section-bgColor);
+}
+/*---------------------------------------------------*/
+.SubscribePlanCard .bodyTitle{
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 17px;
+    font-weight: 400;
+}
+.SubscribePlanCard .bodyContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10px;
+    margin-block: 10px 20px;
+}
+.SubscribePlanCard .bodyContent .planUlItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 15px;
+    border-bottom: 1px solid var(--Section-bgColor);
+}
+.SubscribePlanCard .ItemContent{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 5px;
+}
+.SubscribePlanCard del,
+.SubscribePlanCard .planIcnDel{
+    color: red;
+}
+/*---------------------------------------------------*/
+.SubscribePlanCard .btn{
+    height: 45px;
+    /* border: none; */
+}
+
+
+/*============================== HOVER ===========================*/
+.SubscribePlanCard:hover{
+    transform: translateY(-10px) scale(1);
+}
+.SubscribePlanCards:hover 
+.SubscribePlanCard:not(:hover){
+    filter: blur(2px);
+    transition: var(--main-transition);
+}
+/*============================== HOVER ===========================*/
+
+
+
+/*========================= Active Class =========================*/
+.activePlan{
+    transform: translateY(-10px) scale(1.05);
+    border: 1px solid #fff;
+    filter: blur(0px);
+    cursor: default;
+    box-shadow: 0 7px 15px 1px #00000080;
+    transition: var(--main-transition);
+}
+.activePlan:hover{
+    transform: translateY(-10px) scale(1.05);
+}
+.activePlan .subHeader{
+    font-weight: 600;
+    background-color: #ffffff;
+    color: var(--color-primary);
+    transition: var(--main-transition);
+}
+.activePlan .btn{
+    font-weight: 500;
+    background-color: var(--color-primary);
+    color: #fff;
+    transition: var(--main-transition);
+    border-color: transparent;
+}
+/*========================= Active Class =========================*/

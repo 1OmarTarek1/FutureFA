@@ -1,0 +1,38 @@
+/*header*/
+.TrainPlanHeader{
+    margin-bottom: 20px;
+}
+/*header*/
+
+/*Tabs*/
+.TrainPlan .tab-content{
+    padding: 20px;
+    background-color: var(--body-bgColor);
+}
+.TrainPlan .nav-pills{
+    display: flex;
+    justify-content: flex-start !important;
+    /* align-items: unset !important; */
+    gap: 7px;
+    margin: 0;
+}
+.TrainPlan .nav-pills .nav-link{
+    margin: 0;
+    padding: 10px 18px;
+    background-color: transparent;
+    border: none !important;
+    border-bottom: 1px solid var(--color-lightDark) !important;
+    border-radius: 0;
+    color: var(--color-lightDark) !important;
+}
+.TrainPlan .nav-pills .nav-link:hover{
+    color: var(--color-primary) !important;
+    border-bottom: 1px solid var(--color-primary) !important;
+    background-color: transparent !important;
+}
+.TrainPlan .nav-pills .active{
+    color: var(--color-primary) !important;
+    border-bottom: 1px solid var(--color-primary) !important;
+    background-color: transparent !important;
+}
+/*Tabs*/

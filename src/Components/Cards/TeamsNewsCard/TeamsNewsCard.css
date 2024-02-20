@@ -1,0 +1,33 @@
+.TeamsNewsCard{
+    flex: 1 24%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--body-bgColor);
+    background-color: var(--body-bgColor);
+    transition: var(--main-transition);
+}.TeamsNewsCard:hover{ border-color: var(--color-primary); }
+
+
+
+.TeamsNewsCard .NewsCardImg {
+    margin-bottom: 8px;
+}
+.TeamsNewsCard .NewsCardImg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.TeamsNewsCard  .NewsCardParagraph{
+    text-align: center;
+    margin: 6px 0 15px 0;
+    font-size: 13px;
+    text-wrap: balance;
+    transition: var(--main-transition);
+}.TeamsNewsCard:hover .NewsCardParagraph{ color: var(--color-primary); }
+
+
