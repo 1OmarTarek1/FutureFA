@@ -11,7 +11,8 @@
     background-color: var(--body-bgColor);
     box-shadow: 0px 0px 5px 0px #0000008c ;
     /* transition: var(--main-transition); */
-    transition: linear .3s;
+    transition: linear .2s;
+    transition-timing-function: linear;
 }
 
 

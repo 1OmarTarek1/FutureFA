@@ -1,5 +1,6 @@
 .headroom--unfixed{
     transition: var(--main-transition);
+    transition-timing-function: linear;
 }
 
 
@@ -12,6 +13,7 @@
     max-width: 1680px;
     height: 70px;
     background-color: var(--nav-bgColor);
+    transition-timing-function: linear;
 }
 .nav-container{
     display: flex;
@@ -23,6 +25,7 @@
     border-inline: 1px solid var(--color-primary);
     transition: var(--main-transition);
     box-shadow: 0px 0px 5px 0px #00000075;
+    transition-timing-function: linear;
 }
 .headroom--unfixed .nav-navbar{
     background-color: var(--nav-bgColor);

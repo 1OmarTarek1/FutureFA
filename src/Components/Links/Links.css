@@ -95,6 +95,7 @@
         visibility: hidden;
         transition: all .4s ;
         transition: opacity .3s, visibility .2s, inset 1s ;
+        transition-timing-function: linear;
         
     }
     .nav-container .navLink{
@@ -109,6 +110,7 @@
         opacity: 1;
         visibility: visible;
         transition: all .2s ;
+        transition-timing-function: linear;
     }
     .nav-container .navLinks li{
         display: flex;
