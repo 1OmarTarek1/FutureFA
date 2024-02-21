@@ -83,16 +83,18 @@
         flex-direction: column;
         gap: 0;
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 50%;
         transform: translate( -50%, 0%);
         width: 87%;
         background-color: var(--minNav-bgColor);
         border-inline: 1px solid var(--color-primary);
-        opacity: 0;
-        z-index: -1;
-        transition: all .4s;
         box-shadow: 0px 0px 10px 0px #00000025;
+        z-index: -100;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ;
+        transition: opacity .3s, visibility .2s, inset 1s ;
         
     }
     .nav-container .navLink{
@@ -103,8 +105,10 @@
     }
     .nav-container .openNavbar{
         top: 100%;
-        transform: translate( -50%, 0 );
+        transform: translate( -50%, 0);
         opacity: 1;
+        visibility: visible;
+        transition: all .2s ;
     }
     .nav-container .navLinks li{
         display: flex;

@@ -78,6 +78,10 @@
     }
 }
 @media screen and (max-width:767px) {
+    .HomeHeader .colorEffect .HeaderContent{
+        top: 25px;
+    }
+
     .HomeHeader .colorEffect .HeaderIcn {
         display: none;
     }
@@ -90,6 +94,9 @@
 
 }
 @media screen and (max-width:576px) {
+    .HomeHeader .colorEffect .HeaderContent{
+        top: 15px;
+    }
 
     .HomeHeader .colorEffect .HeaderContent .HeaderTitle h2{
         font-size: 2.5rem;

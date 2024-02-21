@@ -169,3 +169,35 @@
         color: #f5f2f296;
     }
 }
+
+@media screen and (max-width:567px) {
+    .MAIN-WRAPPER:has(.Home-Page) .headroom--unfixed{
+        padding: 5px;
+    }
+    .MAIN-WRAPPER:has(.Home-Page) 
+    .headroom--pinned { 
+        padding: 5px; 
+    }
+
+    .MAIN-WRAPPER:has(.Home-Page)
+    .nav-container .logoWrapper .logoImg{
+        animation: .9s ease-in-out 0s infinite alternate logoFlyHeader;
+    }
+    @keyframes logoFlyHeader {
+        from {
+            transform: translateY(3px);
+        }
+        to {
+            transform: translateY(-3px);
+        }
+    }
+
+    .MAIN-WRAPPER:has(.Home-Page)
+    .nav-container{
+        padding: 0px 20px;
+    }
+    .MAIN-WRAPPER:has(.Home-Page)
+    .logoImg{
+        width: 45px;
+    }
+}
