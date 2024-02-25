@@ -1,0 +1,37 @@
+.UserAccount-Section{
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #0000007a;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .2s;
+}
+/*X-Close*/
+.UserAccount-Section .X-close{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.UserAccount-Section .X-close:hover{
+    color: var(--color-primary);
+    transform: rotate(360deg);
+}
+/*X-Close*/
+
+.LoginForm,
+.SignUpForm{
+    direction: ltr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s, visibility .2s;
+}

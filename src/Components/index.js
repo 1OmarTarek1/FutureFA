@@ -18,6 +18,7 @@ export { default as ScrollToTop } from './ToTop-Reload/ScrollToTop'
 export { default as ToTopBtn } from './Buttons/ToTopBtn/ToTopBtn'
 export { default as SidebarBtn } from './Buttons/SidebarBtn/SidebarBtn'
 
+
 // HomePage Components
 export { default as HomeCarousel } from './HomeCarousel/HomeCarousel'
 export { default as HomeHeaderContent } from './HomeHeaderContent/HomeHeaderContent'
@@ -36,6 +37,13 @@ export { default as BestPlayerTrainingCard } from './Cards/BestPlayerTrainingCar
 export { default as KidsPlan } from './TrainingPlanSec/KidsPlan/KidsPlan'
 export { default as BoysPlan } from './TrainingPlanSec/BoysPlan/BoysPlan'
 export { default as MenPlan } from './TrainingPlanSec/MenPlan/MenPlan'
+
+
+
+// UserAccount Components
+export { default as LoginForm } from './LoginForm/LoginForm'
+export { default as SignUpForm } from './SignUpForm/SignUpForm'
+
 
 
 

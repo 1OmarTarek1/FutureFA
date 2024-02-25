@@ -2,6 +2,10 @@ export { default as Navbar } from './Navbar/Navbar'
 export { default as SecNav } from './SecNav/SecNav'
 export { default as Sidebar } from './Sidebar/Sidebar'
 
+// UserAccount Section
+export { default as UserAccount } from './UserAccount/UserAccount'
+
+
 // Home Page
 export { default as HomeHeader } from './HomeHeader/HomeHeader'
 export { default as SomeNews } from './SomeNews/SomeNews'
