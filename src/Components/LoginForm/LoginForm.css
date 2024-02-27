@@ -1,2 +1,44 @@
-/* .LoginForm{
-} */
+
+.LoginForm{
+    height: 430px;
+}
+
+
+
+
+
+
+
+
+
+/*check*/
+.registerLink ,
+.checkInfo {
+    font-size: 13px;
+    font-weight: 400;
+}
+.registerLink a,
+.checkInfo a{
+    color: #ffffffbb;
+}
+.registerLink a:hover,
+.checkInfo a:hover{
+    color: var(--color-primary);
+}
+
+.checkInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theCheck{
+    display: flex;
+    align-items: center;
+}
+.theCheck .saveCheck{
+    position: relative;
+    top: -1px;
+}
+/*check*/
+
+

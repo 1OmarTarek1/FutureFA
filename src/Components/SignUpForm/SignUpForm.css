@@ -1,4 +1,13 @@
 .SignUpForm{
     opacity: 0;
-    visibility: 0;
+    visibility: hidden;
+}
+
+.nameWrapper{
+    display: flex;
+    gap: 20px;
+    /* width: 50px; */
+}
+.nameWrapper .inputElement input{
+    width: 150px;
 }

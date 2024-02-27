@@ -1,0 +1,103 @@
+.formStyle{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ffffff31;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    background-color: #00000046;
+    transition: all var(--main-transition);
+}
+.formHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    transition: all var(--main-transition);
+    
+}
+.formHeader svg{
+    font-size: 55px;
+}
+.TheForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+    transition: all var(--main-transition);
+
+}
+
+
+
+/*input*/
+.inputElement{
+    position: relative;
+    transition: all var(--main-transition);
+
+}
+.theInput{
+    border: none;
+    border-bottom: 1px solid #ffffff85;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    transition: all var(--main-transition);
+
+}
+.theInput:focus{
+    outline: none;
+}
+.theInput::placeholder{
+    color: #fff;
+}
+.inputLabel{
+    position: absolute;
+    left: 10.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    transition: all var(--main-transition);
+
+}
+.inputIcn{
+    position: absolute;
+    right: 10.5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fa-eye{
+    right: 9px;
+}
+.fa-eye-slash{
+    right: 8px;
+}
+/*input*/
+
+
+
+
+/*start focus*/
+.formStyle:has(.email:focus) .emailLabel,
+.formStyle:has(.password:focus) .passLabel{
+    top: 0 ;
+    transform: translateY(-50%) ;
+    font-size: 11px;
+}
+
+.activeLabel{
+    top: 0 !important ;
+    transform: translateY(-50%) ;
+    font-size: 11px;
+}
+/*start focus*/
+
+
+

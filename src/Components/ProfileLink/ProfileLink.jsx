@@ -23,9 +23,10 @@ const ProfileLink = () => {
             </div>
 
 
-            <div className="loginLin " style={{position:"relative",left:"50%",top:"50%",transform:"translate(-50%, -50%)"}}>
+            <div className="loginLin " 
+            style={{position:"relative",left:"50%",top:"50%",transform:"translate(-50%, -50%)"}}>
                 <div className="navLink" style={{width:"unset"}}>
-                    <FaUserCircle style={{fontSize:"30px",cursor:"pointer"}} />
+                    <FaUserCircle className='formIcn' style={{fontSize:"30px",cursor:"pointer"}}/>
                 </div>
             </div>
 

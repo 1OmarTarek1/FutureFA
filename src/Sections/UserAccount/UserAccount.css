@@ -6,10 +6,18 @@
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: #0000007a;
     opacity: 0;
     visibility: hidden;
+    background-color: #0000007a;
     transition: opacity .3s, visibility .2s;
+}
+.closeUserForm{
+    opacity: 0;
+    visibility: hidden;
+}
+.openUserForm{
+    opacity: 1;
+    visibility: visible;
 }
 /*X-Close*/
 .UserAccount-Section .X-close{
@@ -22,7 +30,7 @@
 }
 .UserAccount-Section .X-close:hover{
     color: var(--color-primary);
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 /*X-Close*/
 

@@ -22,13 +22,27 @@ const Navbar = () => {
         NavLinks.forEach( navLink => {
             navLink.addEventListener( 'click', handleCloseNav);
         });
-        // CleanUp
         return () => {
             NavLinks.forEach( navLink => {
                 navLink.removeEventListener( 'click', handleCloseNav );
             });
         }
     }, [ active ])
+
+
+    // open Login Form
+    useEffect( () => {
+        let formCatch = document.querySelector(".UserAccount-Section");
+        let formIcn = document.querySelector(".formIcn");
+        const handelForm = () => {  
+            formCatch.classList.add("openUserForm");
+        };
+        formIcn.addEventListener('click', handelForm );
+        return () => {
+            formIcn.removeEventListener('click', handelForm );
+        }
+        
+    });
     
     return ( 
         <>
@@ -42,11 +56,6 @@ const Navbar = () => {
                                 <img src={logo} alt="Future Academy" className="logoImg" width={50} />
                             </div>
                         </NavLink>
-                        {/* <Search 
-                        idKey           ={"pcSearch"} 
-                        setActive       ={setActive} 
-                        activeSearch    ={activeSearch} 
-                        setActiveSearch ={setActiveSearch}/> */}
                     </div>
 
                     <Links active={active} setActive={setActive} setActiveSearch={setActiveSearch}/>
