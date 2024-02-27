@@ -43,3 +43,16 @@
     transform: translate(-50%, -50%);
     transition: opacity .3s, visibility .2s;
 }
+
+
+@media screen and (max-width:390px) {
+    .formStyle{
+        width: 100%;
+    }
+    .nameWrapper .inputElement input {
+        width: 100%;
+    }
+    .theInput{
+        width: 100%;
+    }
+}
