@@ -39,8 +39,9 @@ const ForgetPassForm = () => {
                         <input 
                         type="text" 
                         className="theInput userNameInput" 
-                        id="forget-emailID-sign" 
+                        id="userName" 
                         placeholder='Username'
+                        autoComplete='true'
                         />
                         <FaRegUser className='inputIcn'/>
                     </div>
@@ -49,8 +50,9 @@ const ForgetPassForm = () => {
                         <input 
                         type="text" 
                         className="theInput userNameInput" 
-                        id="forget-emailID-sign" 
+                        id="phoneNumber" 
                         placeholder='Phone Number'
+                        autoComplete='true'
                         />
                         <FaPhone className='inputIcn' />
                     </div>

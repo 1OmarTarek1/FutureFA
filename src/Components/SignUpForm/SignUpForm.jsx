@@ -38,6 +38,7 @@ const SignUpForm = () => {
                         className="theInput email email-signUp" 
                         id="F-name" 
                         placeholder='First Name'
+                        autoComplete='true'
                         />
                     </div>
                     <div className="inputElement emailElement">
@@ -46,6 +47,7 @@ const SignUpForm = () => {
                         className="theInput email email-signUp" 
                         id="L-name" 
                         placeholder='Last Name'
+                        autoComplete='true'
                         />
                     </div>
                 </div>
