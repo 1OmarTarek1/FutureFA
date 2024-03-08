@@ -1,0 +1,13 @@
+.ForgetPassForm{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.openForgetPassForm{
+    opacity: 1;
+    visibility: visible;
+}
+.closeForgetPassForm{
+    opacity: 0;
+    visibility: hidden;
+}

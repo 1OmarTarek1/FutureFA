@@ -12,17 +12,24 @@
 
 
 /*check*/
+.registerLink {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 .registerLink ,
 .checkInfo {
     font-size: 13px;
     font-weight: 400;
 }
-.registerLink a,
-.checkInfo a{
+.registerLink div,
+.checkInfo div{
     color: #ffffffbb;
+    cursor: pointer;
+    transition: var(--main-transition);
 }
-.registerLink a:hover,
-.checkInfo a:hover{
+.registerLink div:hover,
+.checkInfo div:hover{
     color: var(--color-primary);
 }
 

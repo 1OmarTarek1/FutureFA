@@ -43,6 +43,7 @@ export { default as MenPlan } from './TrainingPlanSec/MenPlan/MenPlan'
 // UserAccount Components
 export { default as LoginForm } from './LoginForm/LoginForm'
 export { default as SignUpForm } from './SignUpForm/SignUpForm'
+export { default as ForgetPassForm } from './ForgetPassForm/ForgetPassForm'
 
 
 

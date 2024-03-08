@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { FaXmark } from 'react-icons/fa6'
-import { LoginForm, SignUpForm } from '../../Components'
+import { ForgetPassForm, LoginForm, SignUpForm } from '../../Components'
 
 import './UserAccount.css'
 import './FormStyle.css'
@@ -35,6 +35,22 @@ const UserAccount = () => {
     })
 
     useEffect(()=>{
+        let backToLoginLink = document.querySelector(".backToLogin")
+        let ForgetPassForm = document.querySelector(".ForgetPassForm")
+        let LoginForm = document.querySelector(".LoginForm")
+        const handelClickSignUp = () => {
+            LoginForm.style.visibility = "visible"
+            LoginForm.style.opacity = "1"
+            ForgetPassForm.style.visibility = "hidden"
+            ForgetPassForm.style.opacity = "0"
+        }
+        backToLoginLink.addEventListener( 'click', handelClickSignUp )
+        return () => {
+            backToLoginLink.removeEventListener( 'click', handelClickSignUp )
+        }
+    })
+
+    useEffect(()=>{
         let haveAccount = document.querySelector(".haveAccount")
         let SignUpForm = document.querySelector(".SignUpForm")
         let LoginForm = document.querySelector(".LoginForm")
@@ -49,6 +65,22 @@ const UserAccount = () => {
             haveAccount.removeEventListener( 'click', handelClickSignUp )
         }
     })
+
+    useEffect(()=>{
+        let forgetLink = document.querySelector(".forgetLink")
+        let ForgetPassForm = document.querySelector(".ForgetPassForm")
+        let LoginForm = document.querySelector(".LoginForm")
+        const handelClickSignUp = () => {
+            LoginForm.style.visibility = "hidden"
+            LoginForm.style.opacity = "0"
+            ForgetPassForm.style.visibility = "visible"
+            ForgetPassForm.style.opacity = "1"
+        }
+        forgetLink.addEventListener( 'click', handelClickSignUp )
+        return () => {
+            forgetLink.removeEventListener( 'click', handelClickSignUp )
+        }
+    })
     return (
         <>
             <div className={ openForm ?
@@ -59,6 +91,7 @@ const UserAccount = () => {
                 <div className="FormsWrapper">
                     <LoginForm />
                     <SignUpForm />
+                    <ForgetPassForm />
                 </div>
             </div>
         </>

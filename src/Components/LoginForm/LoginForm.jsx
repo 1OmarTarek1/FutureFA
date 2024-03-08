@@ -1,6 +1,5 @@
 import { FaRegEnvelope } from 'react-icons/fa6';
 import { MDBBtn } from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import './LoginForm.css'
@@ -96,7 +95,7 @@ const LoginForm = () => { // activeLabel
                             <input type="checkbox" className="saveCheck" id="saveCheckID" style={{marginRight:"5px"}}/>
                             <label htmlFor="saveCheckID">Save Password</label>
                         </div>
-                        <Link to={"#!"} className="forgetLink">Forget Password ?</Link>
+                        <div className="forgetLink">Forget Password ?</div>
                     </div>
 
                     <MDBBtn
@@ -111,7 +110,7 @@ const LoginForm = () => { // activeLabel
 
                     <div className="registerLink w-100 text-center">
                         <span>Don't have an account ? </span>
-                        <Link to={"#!"} className="signUpLink">Register</Link>
+                        <div className="signUpLink">Register</div>
                     </div>
 
                 </form>

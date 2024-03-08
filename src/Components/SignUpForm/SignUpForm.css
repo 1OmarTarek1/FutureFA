@@ -6,7 +6,7 @@
 .nameWrapper{
     display: flex;
     gap: 20px;
-    /* width: 50px; */
+    justify-content: space-between;
 }
 .nameWrapper .inputElement input{
     width: 150px;

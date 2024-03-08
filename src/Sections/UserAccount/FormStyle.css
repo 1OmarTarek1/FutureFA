@@ -1,4 +1,5 @@
 .formStyle{
+    direction: ltr;
     /* position: relative; */
     display: flex;
     flex-direction: column;

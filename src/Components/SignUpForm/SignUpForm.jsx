@@ -1,6 +1,5 @@
 import { FaRegEnvelope } from 'react-icons/fa6'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { MDBBtn } from 'mdb-react-ui-kit'
 import './SignUpForm.css'
 
@@ -120,7 +119,7 @@ const SignUpForm = () => {
 
 
                 <div className="registerLink w-100 text-center">
-                    <Link to={"#!"} className="haveAccount">Already have account</Link>
+                    <div className="haveAccount">Already have account</div>
                 </div>
 
             </form>
