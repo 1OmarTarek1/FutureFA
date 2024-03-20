@@ -113,7 +113,7 @@ const SignUpForm = () => {
                 <MDBBtn
                 tag='input' 
                 type='submit' 
-                value='Login'
+                value='Submit'
                 size='lg' 
                 color='warning'
                 style={{borderRadius:"5px"}}

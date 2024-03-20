@@ -16,6 +16,7 @@
 
 .MAIN-WRAPPER:has(.Home-Page) .nav-navbar{
     position: absolute;
+    width: 100%;
 }
 .MAIN-WRAPPER:has(.Home-Page) .nav-container{
     border-inline: 1px solid rgba(255, 166, 0, 0.541);
