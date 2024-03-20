@@ -1,7 +1,7 @@
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
 import LogoImg from '../../Assets/Images/logoFoot.png'
 import './Footer.css'
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -18,22 +18,22 @@ const Footer = () => {
                 </div>
 
                 <div>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="facebook-f" />
                 </a>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="twitter" />
                 </a>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="google" />
                 </a>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="instagram" />
                 </a>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="linkedin" />
                 </a>
-                <a href='#!' className='me-4 text-reset'>
+                <a href='#' className='me-4 text-reset'>
                     <MDBIcon fab icon="github" />
                 </a>
                 </div>
@@ -44,12 +44,12 @@ const Footer = () => {
                     <MDBRow className='pcFooter mt-3'>
                         <MDBCol md="4" lg="4" xl="3" className='footFont mx-auto mb-4'>
                         <h6 className='text-uppercase fw-bold mb-4'>
-                            <Link to='/' className='text-muted'>
+                            <HashLink to='/' className='text-muted'>
                                 <span className="logoWrapper me-2">
                                     <img src={LogoImg} alt="logo" width={30 }/>
                                 </span>
                                 Future Academy
-                            </Link>
+                            </HashLink>
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
@@ -60,24 +60,24 @@ const Footer = () => {
                         <MDBCol md="2" lg="2" xl="2" className='footFont mx-auto mb-4'>
                         <h6 className='text-uppercase fw-bold mb-4'>Pages</h6>
                         <p>
-                            <a href='#!' className='text-reset'>
+                            <HashLink to={"/"} className='text-reset'>
                                 Home
-                            </a>
+                            </HashLink>
                         </p>
                         <p>
-                            <a href='#!' className='text-reset'>
+                            <HashLink to={"/News"} className='text-reset'>
                                 News
-                            </a>
+                            </HashLink>
                         </p>
                         <p>
-                            <a href='#!' className='text-reset'>
+                            <HashLink to={"/Training"} className='text-reset'>
                                 Training
-                            </a>
+                            </HashLink>
                         </p>
                         <p>
-                            <a href='#!' className='text-reset'>
+                            <HashLink to={"/Else/About"} className='text-reset'>
                                 About Us
-                            </a>
+                            </HashLink>
                         </p>
                         </MDBCol>
 
@@ -85,27 +85,27 @@ const Footer = () => {
                             <h6 className='text-uppercase fw-bold mb-4'>links</h6>
 
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <HashLink to={"/Training#TrainingTime"} className='text-reset'>
                                     Training Time
-                                </a>
+                                </HashLink>
                             </p>
 
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <HashLink to={"/#SomeNews"} className='text-reset'>
                                     Important News
-                                </a>
+                                </HashLink>
                             </p>
 
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <HashLink to={"/Contact#SubscribePlans"} className='text-reset'>
                                     Subscribe Plans
-                                </a>
+                                </HashLink>
                             </p>
 
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <HashLink to={"/#Teams"} className='text-reset'>
                                     Teams
-                                </a>
+                                </HashLink>
                             </p>
 
                         </MDBCol>
@@ -132,51 +132,51 @@ const Footer = () => {
                         <MDBAccordionItem collapseId={1} headerTitle='Pages'>
                             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Home
-                                    </a>
+                                    </HashLink>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         News
-                                    </a>
+                                    </HashLink>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Training
-                                    </a>
+                                    </HashLink>
                                 </p>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         About Us
-                                    </a>
+                                    </HashLink>
                                 </p>
                             </MDBCol>
                         </MDBAccordionItem>
                         <MDBAccordionItem collapseId={2} headerTitle='Links'>
                             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Training Time
-                                    </a>
+                                    </HashLink>
                                 </p>
 
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Important News
-                                    </a>
+                                    </HashLink>
                                 </p>
 
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Subscribe Plans
-                                    </a>
+                                    </HashLink>
                                 </p>
 
                                 <p>
-                                    <a href='#!' className='text-reset'>
+                                    <HashLink to={""} className='text-reset'>
                                         Teams
-                                    </a>
+                                    </HashLink>
                                 </p>
                             </MDBCol>
                         </MDBAccordionItem>
@@ -204,7 +204,7 @@ const Footer = () => {
 
             <div 
             className='footSecBott text-center p-4'>
-                © 2021 Copyright: <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+                © 2021 Copyright: <a className='text-reset fw-bold' href='#!'>
                 Programer.com
                 </a> - Created by: <strong className='text-reset fw-bold'>Omar Tarek</strong>
             </div>

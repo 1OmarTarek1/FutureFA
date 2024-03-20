@@ -46,6 +46,11 @@ export { default as SignUpForm } from './SignUpForm/SignUpForm'
 export { default as ForgetPassForm } from './ForgetPassForm/ForgetPassForm'
 
 
+// Sidebar Theme
+export { default as WebTheme } from './WebTheme/WebTheme'
+
+
+
 
 
 

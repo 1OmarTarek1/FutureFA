@@ -12,7 +12,7 @@ import './ForgetPassForm.css'
 const ForgetPassForm = () => {
     const [ passEye, setPassEye ] = useState(false)
 
-    let handleEye = (e) => {
+    let handleEye = () => {
         setPassEye(!passEye)
         let passwords = document.querySelectorAll(".password-signUp")
         passwords.forEach(password => {

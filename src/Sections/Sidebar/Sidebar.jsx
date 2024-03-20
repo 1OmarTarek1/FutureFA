@@ -1,4 +1,4 @@
-import { SidebarBtn } from '../../Components'
+import { SidebarBtn, WebTheme } from '../../Components'
 import { HashLink } from 'react-router-hash-link';
 import profileImg from '../../Assets/Images/profile.jpg'
 
@@ -12,7 +12,6 @@ import { FaArrowRightFromBracket,
     FaGear,
     FaRegCircleQuestion,
     FaCircleInfo,
-    FaCircleHalfStroke,  
     } from "react-icons/fa6";
 
 import './Sidebar.css'
@@ -129,26 +128,11 @@ const Sidebar = () => {
                                     </span>
                                 </HashLink>
                             </div>
-                            <div className="footerLink">
-                                <HashLink to="#!" className="sidebarLink sideBodyLink footerLink">
-                                    <FaCircleHalfStroke />
-                                    <span>
-                                        الوضع
-                                    </span>
-                                </HashLink>
-                            </div>
+                            <WebTheme />
                         </div>
                     </div>
 
                 </div>
-                {/* <div className="closeSidebar">
-                    <input 
-                    className='checkClose' 
-                    type="checkbox" 
-                    name="checkCloseName" 
-                    id="checkCloseID" 
-                    />
-                </div> */}
             </div>
         </>
     )
