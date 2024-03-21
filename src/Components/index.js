@@ -14,6 +14,10 @@ export { default as Search } from './Search/Search'
 
 // When Reload Scroll will be to ( 0 ).
 export { default as ScrollToTop } from './ToTop-Reload/ScrollToTop'
+
+// Reload Animation
+export { default as OpenWebEffect } from './OpenWebEffect/OpenWebEffect'
+export { default as ReloadEffect } from './ReloadEffect/ReloadEffect'
 // Buttons
 export { default as ToTopBtn } from './Buttons/ToTopBtn/ToTopBtn'
 export { default as SidebarBtn } from './Buttons/SidebarBtn/SidebarBtn'

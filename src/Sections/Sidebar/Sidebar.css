@@ -2,7 +2,7 @@
     position: fixed;
     inset: 0;
     right: -235px;
-    z-index: 100;
+    z-index: 10000;
     width: 235px;
     height: 100vh;
     display: flex;

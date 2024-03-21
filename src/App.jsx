@@ -15,16 +15,20 @@ import {
   Team2019 
 } from './Pages/index'
 import { Footer, Navbar, Sidebar, UserAccount } from './Sections';
-import { ScrollToTop, ToTopBtn } from './Components';
+import { ScrollToTop, ToTopBtn, ReloadEffect, OpenWebEffect } from './Components';
 import './App.css';
 
 function App() {  
 // add loading and not a Page 
-// هناك مشكلتين الانتر فالسرش مبيجبش اللينك بظبط \\ الناف بار من اول سكرين 385بكسل بتبوظ الشكل
+// add (NOT a Page) Page 
+// هناك مشكلتين الانتر فالسرش مبيجبش اللينك بظبط
+// الناف بار من اول سكرين 385بكسل بتبوظ الشكل
   return (
     <>
     <Router basename='/FutureFA'>
         <div className='MAIN-WRAPPER' style={{ maxWidth:"1680px", marginInline:"auto"}} >
+        <OpenWebEffect />
+        <ReloadEffect />
         <UserAccount />
         <Sidebar />
         <Navbar /> 
