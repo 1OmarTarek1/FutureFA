@@ -57,9 +57,9 @@
     --Section-bgColor   : var(--color-dark); */
 
 /* Fonts Colors */
-    --nav-fontColor     : #fff;
-    --paragraph-color   : var(--color-primary);
-    --color-lightDark   : var(--color-primary);
+    --nav-fontColor     : #ffffffb7;
+    --paragraph-color   : #ffffffb7;
+    --color-lightDark   : #ffffffb7;
 
 }
 
