@@ -34,8 +34,11 @@ const Navbar = () => {
     useEffect( () => {
         let formCatch = document.querySelector(".UserAccount-Section");
         let formIcn = document.querySelector(".formIcn");
+        let LoginForm = document.querySelector(".LoginForm")
         const handelForm = () => {  
             formCatch.classList.add("openUserForm");
+            LoginForm.style.visibility = "visible"
+            LoginForm.style.opacity = "1"
         };
         formIcn.addEventListener('click', handelForm );
         return () => {

@@ -41,10 +41,23 @@ const Sidebar = () => {
             })
         }
     });
+    // useEffect(()=>{ // To make sidebar onblur close
+    //     const handleClose = () => {
+    //         checkbox.checked= false
+    //     }
+    //     let checkbox = document.querySelector(".checkSide");
+    //     let SidebarSection = document.querySelector(".Sidebar-Section");
+    //     SidebarSection.addEventListener('blur',handleClose);
+    //     return() => {
+    //         SidebarSection.removeEventListener('blur',handleClose)
+    //     };
+    // }) 
+
 
     return (
         <>
-            <div className="Sidebar-Section">
+        {/* tabIndex="0" // To make sidebar onblur close */}
+            <div className="Sidebar-Section"  >
                 <div className="Sidebar"> <SidebarBtn />
                     <div className="sidebar-content">
 

@@ -15,7 +15,18 @@ import './FormStyle.css'
 const UserAccount = () => {
     const [openForm, setOpenForm] = useState(false)
     const handelForm = () => {
+        let LoginForm = document.querySelector(".LoginForm")
+        let ForgetPassForm = document.querySelector(".ForgetPassForm")
+        let SignUpForm = document.querySelector(".SignUpForm")
+        LoginForm.style.visibility = "hidden"
+        LoginForm.style.opacity = "0"
+        ForgetPassForm.style.visibility = "hidden"
+        ForgetPassForm.style.opacity = "0"
+        SignUpForm.style.visibility = "hidden"
+        SignUpForm.style.opacity = "0"
         setOpenForm(!openForm)
+
+
     }
 
     useEffect(()=>{
